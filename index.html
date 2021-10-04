@@ -10,7 +10,10 @@
 
     <link rel="stylesheet" href="style.css">
 
+    <script src="/tv-demos/jquery.min.js"></script>
+
     <script src="//w3.cdn.anvato.net/player/prod/v3/scripts/anvload.js"></script>
+    <script src="/tv-demos/loadURL.js"></script>
 
     <title>Demos for TV</title>
 </head>
@@ -60,14 +63,14 @@
         });
 
         AnvatoPlayer("playerLIVE1").init({
-            url: "https://tkx.mp.lura.live/rest/v2/mcp/video/adstLv5Vo3ZqQaPz?anvack=Ee21VWQv0PaMJaS7Ir9Tplame4a983vx&eud=SPJ2TTCV2TkLap1A%2BTrLIHV3GQciCro8bWLhxHmHYURCz588L682%2FjJG9QkL7z7fSDk%2BtV%2BLuGU2GuXW2nE0qA%3D%3D",
+            url: window.url,
             width: "90%",
             poster: 'https://imagecomposer.nfl.com/?l=https://static.nfl.com/static/content/public/static/mobile/apps/nfl/misc/inline-video-player.jpg&w=800&c=140',
             title: "Sim - Green Bay Packers at San Francisco 49ers", 
         });
 
         AnvatoPlayer("playerLIVE2").init({
-            url: "https://tkx.mp.lura.live/rest/v2/mcp/video/adstLv5Vo3ZqQaPz?anvack=Ee21VWQv0PaMJaS7Ir9Tplame4a983vx&eud=SPJ2TTCV2TkLap1A%2BTrLIHV3GQciCro8bWLhxHmHYURCz588L682%2FjJG9QkL7z7fSDk%2BtV%2BLuGU2GuXW2nE0qA%3D%3D",
+            url: window.url,
             width: "90%",
             poster: 'https://imagecomposer.nfl.com/?l=https://static.nfl.com/static/content/public/static/mobile/apps/nfl/misc/inline-video-player.jpg&w=800&c=140',
             title: "Sim - Green Bay Packers at San Francisco 49ers", 
