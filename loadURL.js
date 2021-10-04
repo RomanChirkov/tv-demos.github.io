@@ -50,15 +50,13 @@ async function load_player() {
 AnvatoPlayer("playerLIVE1").init({
     url: api_response.stitched_url,
     width: "90%",
-    poster: 'https://imagecomposer.nfl.com/?l=https://static.nfl.com/static/content/public/static/mobile/apps/nfl/misc/inline-video-player.jpg&w=800&c=140',
-    title: "Sim - Green Bay Packers at San Francisco 49ers", 
+    title: "LIVE without ADS", 
 });
 
 AnvatoPlayer("playerLIVE2").init({
     url: api_response.stitched_url,
     width: "90%",
-    poster: 'https://imagecomposer.nfl.com/?l=https://static.nfl.com/static/content/public/static/mobile/apps/nfl/misc/inline-video-player.jpg&w=800&c=140',
-    title: "Sim - Green Bay Packers at San Francisco 49ers", 
+    title: "LIVE with DFP ADS", 
     plugins: {
         dfp: {
             clientSide: {
