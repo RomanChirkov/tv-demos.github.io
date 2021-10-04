@@ -1,0 +1,19 @@
+.VOD,
+.LIVE{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.withoutADS,
+.withADS{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    align-items: center;
+}
+
+.text{
+    font-size: 24px;
+    font-weight: 600;
+}

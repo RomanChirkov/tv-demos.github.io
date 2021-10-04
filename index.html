@@ -1,0 +1,84 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+
+    <script src="//w3.cdn.anvato.net/player/prod/v3/scripts/anvload.js"></script>
+
+    <title>Demos for TV</title>
+</head>
+<body>
+    <div class="VOD">
+        <div class="withoutADS">
+            <p class="text">VOD without ADS</p>
+            <div id="playerVOD1"></div>
+        </div>
+        <div class="withADS">
+            <p class="text">VOD with DFP ADS</p>
+            <div id="playerVOD2"></div>
+        </div>
+    </div>
+    <div class="LIVE">
+        <div class="withoutADS">
+            <p class="text">LIVE without ADS</p>
+            <div id="playerLIVE1"></div>
+        </div>
+        <div class="withADS">
+            <p class="text">LIVE with DFP ADS</p>
+            <div id="playerLIVE2"></div>
+        </div>
+    </div>
+    <script> 
+        AnvatoPlayer("playerVOD1").init({
+            url: "https://mcp-download.storage.googleapis.com/anv-videos/variant/3697036.m3u8", 
+            width: "90%", 
+            poster: "https://mcp-media.storage.googleapis.com/anv-iupl/5FA/ACA/5FAACA8FB2F3459C81F2CEF515615DAF", 
+            title: "Sintel", 
+            description: "Third Open Movie by Blender Foundation"
+        });
+
+        AnvatoPlayer("playerVOD2").init({
+            url: "https://mcp-download.storage.googleapis.com/anv-videos/variant/3697036.m3u8", 
+            width: "90%", 
+            poster: "https://mcp-media.storage.googleapis.com/anv-iupl/5FA/ACA/5FAACA8FB2F3459C81F2CEF515615DAF", 
+            title: "Sintel", 
+            description: "Third Open Movie by Blender Foundation",
+            plugins: {
+                dfp: {
+                    clientSide: {
+                        adTagUrl: 'https://pubads.g.doubleclick.net/gampad/ads?sz=640x480&iu=/124319096/external/ad_rule_samples&ciu_szs=300x250&ad_rule=1&impl=s&gdfp_req=1&env=vp&output=vmap&unviewed_position_start=1&cust_params=deployment%3Ddevsite%26sample_ar%3Dpremidpostpod&cmsid=496&vid=short_onecue&correlator=',
+                    },
+                },
+            }
+        });
+
+        AnvatoPlayer("playerLIVE1").init({
+            url: "https://tkx.mp.lura.live/rest/v2/mcp/video/adstLv5Vo3ZqQaPz?anvack=Ee21VWQv0PaMJaS7Ir9Tplame4a983vx&eud=SPJ2TTCV2TkLap1A%2BTrLIHV3GQciCro8bWLhxHmHYURCz588L682%2FjJG9QkL7z7fSDk%2BtV%2BLuGU2GuXW2nE0qA%3D%3D",
+            width: "90%",
+            poster: 'https://imagecomposer.nfl.com/?l=https://static.nfl.com/static/content/public/static/mobile/apps/nfl/misc/inline-video-player.jpg&w=800&c=140',
+            title: "Sim - Green Bay Packers at San Francisco 49ers", 
+        });
+
+        AnvatoPlayer("playerLIVE2").init({
+            url: "https://tkx.mp.lura.live/rest/v2/mcp/video/adstLv5Vo3ZqQaPz?anvack=Ee21VWQv0PaMJaS7Ir9Tplame4a983vx&eud=SPJ2TTCV2TkLap1A%2BTrLIHV3GQciCro8bWLhxHmHYURCz588L682%2FjJG9QkL7z7fSDk%2BtV%2BLuGU2GuXW2nE0qA%3D%3D",
+            width: "90%",
+            poster: 'https://imagecomposer.nfl.com/?l=https://static.nfl.com/static/content/public/static/mobile/apps/nfl/misc/inline-video-player.jpg&w=800&c=140',
+            title: "Sim - Green Bay Packers at San Francisco 49ers", 
+            plugins: {
+                dfp: {
+                    clientSide: {
+                        adTagUrl: 'https://pubads.g.doubleclick.net/gampad/ads?sz=640x480&iu=/124319096/external/ad_rule_samples&ciu_szs=300x250&ad_rule=1&impl=s&gdfp_req=1&env=vp&output=vmap&unviewed_position_start=1&cust_params=deployment%3Ddevsite%26sample_ar%3Dpremidpostpod&cmsid=496&vid=short_onecue&correlator=',
+                    },
+                },
+            }
+        });
+    </script> 
+</body>
+</html>
