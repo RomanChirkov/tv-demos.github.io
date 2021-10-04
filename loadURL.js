@@ -47,7 +47,26 @@ async function load_player() {
     return;
   }
 
-  window.url = api_response.stitched_url;
+AnvatoPlayer("playerLIVE1").init({
+    url: window.url,
+    width: "90%",
+    poster: 'https://imagecomposer.nfl.com/?l=https://static.nfl.com/static/content/public/static/mobile/apps/nfl/misc/inline-video-player.jpg&w=800&c=140',
+    title: "Sim - Green Bay Packers at San Francisco 49ers", 
+});
+
+AnvatoPlayer("playerLIVE2").init({
+    url: window.url,
+    width: "90%",
+    poster: 'https://imagecomposer.nfl.com/?l=https://static.nfl.com/static/content/public/static/mobile/apps/nfl/misc/inline-video-player.jpg&w=800&c=140',
+    title: "Sim - Green Bay Packers at San Francisco 49ers", 
+    plugins: {
+        dfp: {
+            clientSide: {
+                adTagUrl: 'https://pubads.g.doubleclick.net/gampad/ads?sz=640x480&iu=/124319096/external/ad_rule_samples&ciu_szs=300x250&ad_rule=1&impl=s&gdfp_req=1&env=vp&output=vmap&unviewed_position_start=1&cust_params=deployment%3Ddevsite%26sample_ar%3Dpremidpostpod&cmsid=496&vid=short_onecue&correlator=',
+            },
+        },
+    }
+});
 }
 
 load_player();

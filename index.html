@@ -11,9 +11,9 @@
     <link rel="stylesheet" href="style.css">
 
     <script src="jquery.min.js"></script>
+    <script src="loadURL.js"></script>
 
     <script src="//w3.cdn.anvato.net/player/prod/v3/scripts/anvload.js"></script>
-    <script src="loadURL.js"></script>
 
     <title>Demos for TV</title>
 </head>
@@ -53,27 +53,6 @@
             poster: "https://mcp-media.storage.googleapis.com/anv-iupl/5FA/ACA/5FAACA8FB2F3459C81F2CEF515615DAF", 
             title: "Sintel", 
             description: "Third Open Movie by Blender Foundation",
-            plugins: {
-                dfp: {
-                    clientSide: {
-                        adTagUrl: 'https://pubads.g.doubleclick.net/gampad/ads?sz=640x480&iu=/124319096/external/ad_rule_samples&ciu_szs=300x250&ad_rule=1&impl=s&gdfp_req=1&env=vp&output=vmap&unviewed_position_start=1&cust_params=deployment%3Ddevsite%26sample_ar%3Dpremidpostpod&cmsid=496&vid=short_onecue&correlator=',
-                    },
-                },
-            }
-        });
-
-        AnvatoPlayer("playerLIVE1").init({
-            url: window.url,
-            width: "90%",
-            poster: 'https://imagecomposer.nfl.com/?l=https://static.nfl.com/static/content/public/static/mobile/apps/nfl/misc/inline-video-player.jpg&w=800&c=140',
-            title: "Sim - Green Bay Packers at San Francisco 49ers", 
-        });
-
-        AnvatoPlayer("playerLIVE2").init({
-            url: window.url,
-            width: "90%",
-            poster: 'https://imagecomposer.nfl.com/?l=https://static.nfl.com/static/content/public/static/mobile/apps/nfl/misc/inline-video-player.jpg&w=800&c=140',
-            title: "Sim - Green Bay Packers at San Francisco 49ers", 
             plugins: {
                 dfp: {
                     clientSide: {
