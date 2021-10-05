@@ -18,6 +18,22 @@
     <title>Demos for TV</title>
 </head>
 <body>
+    <div class="CUSTOM">
+        <div class="withoutADS">
+            <p class="text">Custom config</p>
+            <textarea id="customConfig" rows="10" cols="50">
+                {
+                    "url": "https://mcp-download.storage.googleapis.com/anv-videos/variant/3697036.m3u8", 
+                    "width": "90%", 
+                    "poster": "https://mcp-media.storage.googleapis.com/anv-iupl/5FA/ACA/5FAACA8FB2F3459C81F2CEF515615DAF", 
+                    "title": "VOD without ADS", 
+                    "description": "Third Open Movie by Blender Foundation"
+                }
+            </textarea>
+            <button onclick="loadConfig()">Load Config</button>
+            <div id="playerCUSTOM"></div>
+        </div>
+    </div>
     <div class="VOD">
         <div class="withoutADS">
             <p class="text">VOD without ADS</p>
@@ -61,6 +77,12 @@
                 },
             }
         });
+
+        function loadConfig() {
+            let config = document.getElementById("customConfig").value.replace(/\s/g, '');
+            let obj = JSON.parse(config);
+            AnvatoPlayer("playerCUSTOM").init(obj);
+        }
     </script> 
 </body>
 </html>
